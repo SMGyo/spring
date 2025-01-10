@@ -9,4 +9,5 @@ public interface EmployeesMapper {
 	List<EmployeesDto> findAll();
 	EmployeesDto findById(long id);
 	List<EmployeesDto> findBydeptAndName(@Param("departmentId") Long departmentId, @Param("firstName") String firstName);
+	List<DeptDto> deptAll();
 }

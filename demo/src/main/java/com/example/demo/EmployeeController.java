@@ -19,6 +19,11 @@ public class EmployeeController {
 		model.addAttribute("empList",employeesMapper.findAll());
 		return "empList";
 	}
+	@GetMapping("/dept")
+	public String list2(Model model){
+		model.addAttribute("deptList",employeesMapper.deptAll());
+		return "deptList";
+	}
 //	@GetMapping("/empOne")
 //	public Map<String,Object> list2(long empId) {
 //		return employeesMapper.findById(empId);

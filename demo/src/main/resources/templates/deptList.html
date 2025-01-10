@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.high {
+	color: red;
+}
+
+.low {
+	color: gold;
+}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>MANAGER</th>
+			<th>LOCATION</th>
+		</tr>
+		<tr th:each="dept,stat : ${deptList}">
+			<td th:text="${stat.index}"></td>
+			<td th:text="${dept.departmentId}"></td>
+		</tr>
+	</table>
+	<script th:inline="javascript">
+		let list2 = [[${deptList}]]
+	</script>
+</body>
+</html>

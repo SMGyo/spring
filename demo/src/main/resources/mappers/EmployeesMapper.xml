@@ -28,4 +28,8 @@
 			</if>
 		</where>	
 	</select>
+	<select id="deptAll" resultType="com.example.demo.mapper.DeptDto">
+		SELECT *
+		FROM departments
+	</select>
 </mapper>

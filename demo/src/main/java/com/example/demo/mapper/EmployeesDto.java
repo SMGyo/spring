@@ -1,12 +1,14 @@
 package com.example.demo.mapper;
 
+import java.util.Date;
+
 public class EmployeesDto {
 	private String employeeId;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String phoneNumber;
-	private String hireDate;
+	private Date hireDate;
 	private String jobId;
 	private String salary;
 	private String commissionPct;
@@ -42,10 +44,10 @@ public class EmployeesDto {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	public String getHireDate() {
+	public Date getHireDate() {
 		return hireDate;
 	}
-	public void setHireDate(String hireDate) {
+	public void setHireDate(Date hireDate) {
 		this.hireDate = hireDate;
 	}
 	public String getJobId() {
